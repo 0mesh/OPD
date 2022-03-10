@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+    Appointment
+    <mat-list>
+      <mat-list-item
+        matLine
+        [routerLink]="['all']"
+        routerLinkActive="active"
+        class="sidenav"
+      >
+        <mat-icon matListIcon>table_chart</mat-icon>
+
+        <h3 matLine>Appointment List</h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <div>
+      <app-get-all-patients></app-get-all-patients>
+    </div>
+    <div>
+      <app-patient-registration></app-patient-registration>
+    </div> -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <app-patient-registration></app-patient-registration> -->

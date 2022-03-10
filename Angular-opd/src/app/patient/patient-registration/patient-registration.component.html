@@ -1,0 +1,290 @@
+<div class="mt-4 pt-4 pb-4 rounded-top">
+  <form
+    method="post"
+    action="http://localhost:8080/patients"
+    class="needs-validation"
+    novalidate
+    #registerPatientForm="ngForm"
+    (ngSubmit)="savePatient(registerPatientForm)"
+    [formGroup]="registrationForm"
+  >
+    <div class="form-row d-flex mb-5 justify-content-center form-group">
+      <label for="firstNameId" class="col-md-1 col-form-label"
+        >First Name</label
+      >
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="
+            firstNameValidator.invalid && firstNameValidator.touched
+          "
+          [class.is-valid]="firstNameValidator.valid"
+          formControlName="firstName"
+          type="text"
+          name="firstName"
+          id="firstNameId"
+          class="form-control"
+          placeholder="First name"
+          aria-label="First name"
+          [(ngModel)]="patient.firstName"
+        />
+
+        <div
+          *ngIf="firstNameValidator.invalid && firstNameValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="firstNameValidator.errors?.required"> required </small>
+          <small *ngIf="firstNameValidator.errors?.minlength">
+            First Name should have atleast 5 characters
+          </small>
+          <small *ngIf="firstNameValidator.errors?.pattern">
+            The name should contain only alphabets
+          </small>
+        </div>
+      </div>
+      <label for="lastNameId" class="col-md-1 col-form-label">Last Name</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="
+            lastNameValidator.invalid && lastNameValidator.touched
+          "
+          [class.is-valid]="lastNameValidator.valid"
+          formControlName="lastName"
+          type="text"
+          name="lastName"
+          id="lastNameId"
+          class="form-control"
+          placeholder="Last name"
+          aria-label="Last name"
+          [(ngModel)]="patient.lastName"
+        />
+
+        <div
+          *ngIf="lastNameValidator.invalid && lastNameValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="lastNameValidator.errors?.required"> required </small>
+          <small *ngIf="lastNameValidator.errors?.minlength">
+            Last Name should have atleast 5 characters
+          </small>
+          <small *ngIf="lastNameValidator.errors?.pattern">
+            The name should contain only alphabets
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row mb-5 d-flex justify-content-center form-group">
+      <label for="inputEmail" class="col-md-1 col-form-label">Email</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="emailValidator.invalid && emailValidator.touched"
+          [class.is-valid]="emailValidator.valid"
+          formControlName="email"
+          type="email"
+          name="email"
+          class="form-control"
+          id="inputEmail"
+          placeholder="Email"
+          [(ngModel)]="patient.email"
+        />
+
+        <div
+          *ngIf="emailValidator.invalid && emailValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="emailValidator.errors?.required"> required </small>
+          <small *ngIf="emailValidator.errors?.pattern"
+            >Email address is invalid</small
+          >
+        </div>
+      </div>
+      <label for="PhoneNumber" class="col-md-1 col-form-label">Phone</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="phoneValidator.invalid && phoneValidator.touched"
+          [class.is-valid]="phoneValidator.valid"
+          formControlName="phone"
+          type="text"
+          name="phoneNumber"
+          class="form-control"
+          id="phoneNumber"
+          placeholder="1234567890 or 123-456-7890"
+          [(ngModel)]="patient.phoneNumber"
+        />
+
+        <div
+          *ngIf="phoneValidator.invalid && phoneValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="phoneValidator.errors?.required">Required</small>
+          <small *ngIf="phoneValidator.errors?.pattern"
+            >Phone format invalid</small
+          >
+        </div>
+      </div>
+    </div>
+    <div class="form-row d-flex mb-5 justify-content-center form-group">
+      <label for="inputAddress" class="col-md-1 col-form-label">Address</label>
+      <div class="col-md-9">
+        <input
+          [class.is-invalid]="
+            addressValidator.invalid && addressValidator.touched
+          "
+          [class.is-valid]="addressValidator.valid"
+          formControlName="address"
+          type="text"
+          name="address"
+          class="form-control"
+          id="inputAddress"
+          placeholder="1234 Main St"
+          [(ngModel)]="patient.address"
+        />
+        <div
+          *ngIf="addressValidator.invalid && addressValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="addressValidator.errors?.required">Required</small>
+        </div>
+      </div>
+    </div>
+    <div class="form-row mb-5 d-flex justify-content-center form-group">
+      <label for="cityid" class="col-md-1 col-form-label">City</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="cityValidator.invalid && cityValidator.touched"
+          [class.is-valid]="cityValidator.valid"
+          formControlName="city"
+          type="text"
+          name="city"
+          class="form-control"
+          id="cityid"
+          placeholder="Mumbai"
+          [(ngModel)]="patient.city"
+        />
+        <div
+          *ngIf="cityValidator.invalid && cityValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="cityValidator.errors?.required"> required </small>
+          <small *ngIf="cityValidator.errors?.minlength">
+            City should have atleast 3 characters
+          </small>
+
+          <small *ngIf="cityValidator.errors?.pattern">
+            Name of City should contain only alphabets
+          </small>
+        </div>
+      </div>
+      <label for="stateid" class="col-md-1 col-form-label">State</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="stateValidator.invalid && stateValidator.touched"
+          [class.is-valid]="stateValidator.valid"
+          formControlName="state"
+          type="text"
+          name="state"
+          class="form-control"
+          id="stateid"
+          placeholder="Maharashtra"
+          [(ngModel)]="patient.state"
+        />
+        <div
+          *ngIf="stateValidator.invalid && stateValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="stateValidator.errors?.required"> required </small>
+          <small *ngIf="stateValidator.errors?.minlength">
+            City should have atleast 3 characters
+          </small>
+
+          <small *ngIf="stateValidator.errors?.pattern">
+            Name of City should contain only alphabets
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="form-row mb-5 d-flex justify-content-center form-group">
+      <label for="genderId" class="col-md-1 col-form-label">Gender</label>
+      <div class="col-md-2">
+        <select
+          [class.is-invalid]="
+            genderValidator.invalid && genderValidator.touched
+          "
+          [class.is-valid]="genderValidator.valid"
+          class="form-control"
+          id="genderId"
+          name="gender"
+          formControlName="gender"
+          [(ngModel)]="patient.gender"
+        >
+          <option value="MALE">Male</option>
+          <option value="FEMALE">Female</option>
+          <option value="OTHER">Other</option>
+        </select>
+        <div
+          *ngIf="genderValidator.invalid && genderValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="genderValidator.errors?.required">
+            Please select your gender</small
+          >
+        </div>
+      </div>
+      <label for="dob" class="col-md-1 col-form-label">Birth-Date</label>
+      <div class="col-md-3">
+        <input
+          [class.is-invalid]="
+            dateOfBirthValidator.invalid && dateOfBirthValidator.touched
+          "
+          [class.is-valid]="dateOfBirthValidator.valid"
+          formControlName="dateOfBirth"
+          value="${patient.getDateOfBirth()} "
+          type="date"
+          class="form-control col-form-label"
+          id="dob"
+          min="1920-01-01"
+          [max]="maxDate"
+          name="dateOfBirth"
+          [(ngModel)]="patient.dateOfBirth"
+        />
+        <div
+          *ngIf="dateOfBirthValidator.invalid && dateOfBirthValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="dateOfBirthValidator.errors?.required"> Required</small>
+        </div>
+      </div>
+      <label class="col-md-1 col-form-label">SSN</label>
+      <div class="col-md-2">
+        <input
+          [class.is-invalid]="ssnValidator.invalid && ssnValidator.touched"
+          [class.is-valid]="ssnValidator.valid"
+          formControlName="ssn"
+          name="ssn"
+          class="form-control"
+          placeholder="###-##-####"
+          title="###-##-####"
+          [(ngModel)]="patient.ssn"
+        />
+        <div
+          *ngIf="ssnValidator.invalid && ssnValidator.touched"
+          class="invalid-feedback"
+        >
+          <small *ngIf="ssnValidator.errors?.required"> Required</small>
+          <small *ngIf="ssnValidator.errors?.pattern">
+            SSN format invalid
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button
+        class="btn btn-primary form-row justify-content-center"
+        type="submit"
+        [disabled]="!registerPatientForm.valid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

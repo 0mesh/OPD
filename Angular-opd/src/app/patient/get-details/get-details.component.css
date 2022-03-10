@@ -1,0 +1,25 @@
+.header {
+  background-color: rgb(66 , 66, 66);
+  color: rgb(185,185,185);
+  text-align: center;
+}
+.body{
+    background-color: rgb(66 , 66, 66);
+    color: white;
+    text-align: center;
+}
+.position{
+    padding-top: 50px;
+}
+.button{
+    display: flex;
+   justify-content: center;
+}
+
+button:hover{
+    background-color: black;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}

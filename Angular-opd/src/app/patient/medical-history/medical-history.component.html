@@ -1,0 +1,152 @@
+<div class="pt-4 pb-4 rounded-top">
+  <form
+    method="POST"
+    class="needs-validation"
+    novalidate
+    (ngSubmit)="addHistory(updateHistoryForm)"
+    [formGroup]="updateHistoryForm"
+  >
+    <div class="form-row mt-4 d-flex justify-content-center form-group">
+      <label for="patientID" class="form-label col-md-1">Patient ID</label>
+      <div class=":col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="patientId"
+          id="patientID"
+          [value]="id"
+          readonly="true"
+          [(ngModel)]="id"
+        />
+      </div>
+    </div>
+    <div class="form-row d-flex mb-5 justify-content-center form-group">
+      <label for="height" class="col-md-1 col-form-label">Height</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="
+            heightValidator.invalid && heightValidator.touched
+          "
+          formControlName="height"
+          type="text"
+          name="height"
+          id="heightId"
+          class="form-control"
+          placeholder="Height in cm"
+          aria-label="Height"
+          [(ngModel)]="medicalHistory.height"
+        />
+        <div
+          *ngIf="heightValidator.invalid && heightValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          Invalid Height
+        </div>
+      </div>
+      <label for="weight" class="col-md-1 col-form-label">Weight</label>
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="
+            weightValidator.invalid && weightValidator.touched
+          "
+          formControlName="weight"
+          type="text"
+          name="weight"
+          id="weightId"
+          class="form-control"
+          placeholder="Weight in Kg"
+          aria-label="Weight"
+          [(ngModel)]="medicalHistory.weight"
+        />
+        <div
+          *ngIf="weightValidator.invalid && weightValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          Invalid Weight
+        </div>
+      </div>
+    </div>
+    <div class="form-row mb-5 d-flex justify-content-center form-group">
+      <label for="inputsystolic" class="col-md-1 col-form-label"
+        >BP-Systolic</label
+      >
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="
+            systolicValidator.invalid && systolicValidator.touched
+          "
+          formControlName="systolic"
+          type="text"
+          name="systolic"
+          class="form-control"
+          id="inputsystolic"
+          placeholder="Max"
+          [(ngModel)]="medicalHistory.systolic"
+        />
+        <div
+          *ngIf="systolicValidator.invalid && systolicValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          Invalid
+        </div>
+      </div>
+      <label for="diastolic" class="col-md-1 col-form-label"
+        >Diastolic</label
+      >
+      <div class="col-md-4">
+        <input
+          [class.is-invalid]="
+            diastolicValidator.invalid && diastolicValidator.touched
+          "
+          formControlName="diastolic"
+          type="text"
+          name="diastolic"
+          class="form-control"
+          id="diastolic"
+          placeholder="Min"
+          [(ngModel)]="medicalHistory.diastolic"
+        />
+        <div
+          *ngIf="diastolicValidator.invalid && diastolicValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          Invalid
+        </div>
+      </div>
+    </div>
+    <div class="form-row d-flex mb-5 justify-content-center form-group">
+      <label for="inputpulseRate" class="col-md-1 col-form-label"
+        >pulseRate</label
+      >
+      <div class="col-md-9">
+        <input
+          [class.is-invalid]="
+            pulseRateValidator.invalid && pulseRateValidator.touched
+          "
+          formControlName="pulseRate"
+          type="text"
+          name="pulseRate"
+          class="form-control"
+          id="inputpulseRate"
+          placeholder="72 is normal"
+          [(ngModel)]="medicalHistory.pulseRate"
+        />
+        <div
+          *ngIf="pulseRateValidator.invalid && pulseRateValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          Invalid
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button
+        class="btn btn-primary form-row justify-content-center"
+        type="submit"
+        [disabled]="!updateHistoryForm.valid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

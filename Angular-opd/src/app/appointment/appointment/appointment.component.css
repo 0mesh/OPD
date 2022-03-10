@@ -1,0 +1,43 @@
+.navbar {
+  justify-content: space-between;
+}
+
+#reg {
+  margin-right: 2rem;
+}
+mat-sidenav-container {
+  height: 89%;
+}
+mat-sidenav,
+mat-sidenav-content {
+  padding: 16px;
+}
+
+mat-sidenav {
+  background-color: rgb(44, 43, 43);
+  width: 240px;
+}
+
+.info {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sidenav {
+  margin-bottom: 20px;
+
+  justify-content: space-around;
+}
+
+.sidenav:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: black;
+}

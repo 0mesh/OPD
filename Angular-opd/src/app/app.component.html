@@ -1,0 +1,34 @@
+<!-- <app-patient></app-patient> -->
+<div>
+  <mat-toolbar class="navbar" color="primary">
+    <mat-icon
+      routerLink="home"
+      opened="true"
+      routerLinkActive="mat-accent"
+      class="home"
+      >home</mat-icon
+    >
+    <span class="navtitle">OPD App</span>
+    <div class="navbarMenu">
+      <button
+        routerLink="patients"
+        mat-button
+        routerLinkActive="mat-accent"
+        id="patient"
+      >
+        Patient
+      </button>
+
+      <button
+        routerLink="appointments"
+        routerLinkActive="mat-accent"
+        mat-button
+        id="appointment"
+      >
+        Appointment
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

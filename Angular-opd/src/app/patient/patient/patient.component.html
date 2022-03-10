@@ -1,0 +1,39 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+    Patient
+    <mat-list>
+      <mat-list-item
+        routerLink="/patients/all/"
+        routerLinkActive="active"
+        class="sidenav"
+      >
+        <mat-icon matListIcon>table_chart</mat-icon>
+
+        <h4 matLine (click)="onAllPatients()">Patient List</h4>
+      </mat-list-item>
+      <mat-list-item
+        routerLink="/patients/new/"
+        routerLinkActive="active"
+        class="sidenav"
+      >
+        <mat-icon matListIcon>add_box</mat-icon>
+
+        <h4 matLine>New Patient</h4>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!--
+    <div *ngIf="allPatients">
+      <app-get-all-patients></app-get-all-patients>
+    </div>
+    <div *ngIf="allPatients">
+     </div>
+   -->
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <app-patient-registration></app-patient-registration> -->

@@ -1,0 +1,232 @@
+<div class="container pt-4 pb-4">
+  <form
+    method="post"
+    action="http://localhost:8080/appointments"
+    class="needs-validation"
+    novalidate
+    [formGroup]="registrationForm"
+    (ngSubmit)="saveAppointment(registrationForm)"
+  >
+    <h3 style="text-align: center">Appointment Form</h3>
+    <br />
+    <br />
+    <div class="form-row d-flex mb-4 justify-content-center form-group">
+      <label for="patientId" class="col-md-2 col-form-label my-3"
+        >Patient Id</label
+      >
+      <div class="col-md-4 my-3">
+        <input
+          formControlName="patientId"
+          [class.is-invalid]="
+            patientIdValidator.invalid && patientIdValidator.touched
+          "
+          [class.is-valid]="patientIdValidator.valid"
+          id="patientId"
+          name="patientId"
+          type="text"
+          class="form-control"
+          readonly="true;"
+          [(ngModel)]="id"
+        />
+
+        <div
+          *ngIf="patientIdValidator.invalid && patientIdValidator.touched"
+          class="invalidColor"
+        >
+          <small *ngIf="patientIdValidator.errors?.required"> required </small>
+          <small
+            *ngIf="
+              patientIdValidator.errors?.minlength ||
+              patientIdValidator.errors?.maxlength ||
+              patientIdValidator.errors?.pattern
+            "
+          >
+            Patient Id has 7 characters and starts from P
+          </small>
+        </div>
+      </div>
+
+      <label for="affectedOrgan" class="col-md-2 col-form-label my-3"
+        >Specialist</label
+      >
+      <div class="col-md-4 my-3">
+        <select
+          [class.is-invalid]="
+            affectedOrganValidator.invalid && affectedOrganValidator.touched
+          "
+          [class.is-valid]="affectedOrganValidator.valid"
+          formControlName="organ"
+          id="affectedOrgan"
+          name="affectedOrgan"
+          class="custom-select"
+          [(ngModel)]="speciality"
+          (change)="onSelectedSpeciality()"
+        >
+          <option *ngFor="let c of specialityArray" [value]="c">
+            {{ c }}
+          </option>
+        </select>
+        <small
+          *ngIf="
+            affectedOrganValidator.invalid && affectedOrganValidator.touched
+          "
+          class="invalidColor"
+        >
+          required
+        </small>
+      </div>
+
+      <label for="doctorName" class="col-md-2 col-form-label my-3"
+        >Doctor Name</label
+      >
+      <div class="col-md-4 my-3">
+        <select
+          [class.is-invalid]="
+            doctorNameValidator.invalid && doctorNameValidator.touched
+          "
+          [class.is-valid]="doctorNameValidator.valid"
+          formControlName="doctorName"
+          id="doctorName"
+          name="doctorName"
+          class="custom-select"
+          [(ngModel)]="tempdoctorName"
+          [ngClass]="{ disabled: speciality === undefined }"
+          (change)="onSelectedDoctor()"
+        >
+          <!--*ngFor="let name of docMap.get(speciality)-->
+          <option value="" selected="selected">--Please select--</option>
+          <option *ngFor="let s of doctorArrayMap" [value]="s['doctorNameID']">
+            {{ s["doctorName"] }}
+          </option>
+        </select>
+        <small
+          *ngIf="doctorNameValidator.invalid && doctorNameValidator.touched"
+          class="invalidColor"
+        >
+          required
+        </small>
+      </div>
+
+      <label for="doctorId" class="col-md-2 col-form-label my-3"
+        >Doctor Id</label
+      >
+      <div class="col-4 my-3">
+        <input
+          formControlName="doctorId"
+          id="doctorId"
+          name="doctorId"
+          type="text"
+          class="form-control"
+          readonly="true"
+          [value]="doctorId"
+        />
+      </div>
+
+      <label for="appointmentDate" class="col-2 col-form-label my-3"
+        >Appointment Date</label
+      >
+      <div class="col-4 my-3">
+        <input
+          [class.is-invalid]="
+            appointmentDateValidator.invalid && appointmentDateValidator.touched
+          "
+          (change)="getSlots()"
+          [class.is-valid]="appointmentDateValidator.valid"
+          formControlName="appointmentDate"
+          id="appointmentDate"
+          name="appointmentDate"
+          type="date"
+          [min]="minDate"
+          [max]="maxDate"
+          class="form-control"
+          [(ngModel)]="appointment.appointmentDate"
+        />
+        <div
+          *ngIf="
+            appointmentDateValidator.invalid && appointmentDateValidator.touched
+          "
+          class="invalidColor"
+        >
+          required
+        </div>
+      </div>
+
+      <label for="slotStartTime" class="col-md-2 col-form-label my-3"
+        >Slot Start Time</label
+      >
+      <div class="col-4 my-3">
+        <select
+          formControlName="slotStartTime"
+          [class.is-invalid]="
+            startTimeValidator.invalid && startTimeValidator.touched
+          "
+          [class.is-valid]="startTimeValidator.valid"
+          id="slotStartTime"
+          name="slotStartTime"
+          class="custom-select"
+          (change)="getEndTime()"
+          [(ngModel)]="appointment.slotStartTime"
+          [ngClass]="{
+            disabled:
+              doctorId === undefined &&
+              appointment.appointmentDate === undefined
+          }"
+        >
+          <option value="" selected="selected">--Please select--</option>
+          <option *ngFor="let slot of slots" [value]="slot.startTime">
+            {{ slot.startTime }}
+          </option>
+        </select>
+        <div
+          *ngIf="startTimeValidator.invalid && startTimeValidator.touched"
+          class="invalidColor"
+        >
+          required
+        </div>
+      </div>
+      <label for="slotStartTime" class="col-md-2 col-form-label my-3"
+        >Slot End Time</label
+      >
+      <div class="col-4 my-3">
+        <select
+          formControlName="slotEndTime"
+          [class.is-invalid]="
+            endTimeValidator.invalid && endTimeValidator.touched
+          "
+          [class.is-valid]="endTimeValidator.valid"
+          id="slotStartTime"
+          name="slotStartTime"
+          class="custom-select"
+          readonly="true"
+          [(ngModel)]="appointment.slotEndTime"
+          [ngClass]="{
+            disabled:
+              doctorId === undefined &&
+              appointment.appointmentDate === undefined
+          }"
+        >
+          <option [value]="appointment.slotEndTime">
+            {{ appointment.slotEndTime }}
+          </option>
+        </select>
+        <div
+          *ngIf="endTimeValidator.invalid && endTimeValidator.touched"
+          class="invalidColor"
+        >
+          required
+        </div>
+      </div>
+    </div>
+
+    <div class="offset-4 col-8">
+      <button
+        name="submit"
+        type="submit"
+        class="btn btn-primary form-row justify-content-center"
+        [disabled]="!registrationForm.valid || registrationForm.untouched"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

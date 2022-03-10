@@ -1,0 +1,57 @@
+<div>
+  <form
+    method="post"
+    action="http://localhost:8080/patients"
+    class="needs-validation"
+    novalidate
+   
+    (ngSubmit)="getPatient(getPatientForm)"
+    [formGroup]="getPatientForm"
+  >
+    <div class="form-row mt-4 d-flex justify-content-center form-group">
+      <label for="patientID" class="form-label col-md-1">Patient ID</label>
+      <div class=":col-md-4">
+        <input
+          [class.is-invalid]="
+            patientIdValidator.invalid && patientIdValidator.touched
+          "
+          [class.is-valid]="patientIdValidator.valid"
+          type="text"
+          class="form-control"
+          name="patientId"
+          formControlName="patientId"
+          [(ngModel)]="patientId"
+        />
+
+        <div
+          *ngIf="patientIdValidator.invalid && patientIdValidator.touched"
+          class="invalidColor invalid-feedback"
+        >
+          <small *ngIf="patientIdValidator.errors?.required"> required </small>
+          <small *ngIf="patientIdValidator.errors?.minlength">
+            PatientId too short, it should have 7 characters
+          </small>
+          <small *ngIf="patientIdValidator.errors?.maxlength">
+            PatientId too long, it should have 7 characters
+          </small>
+          <small *ngIf="patientIdValidator.errors?.pattern">
+            Patient Id starts with 'P' followed by 6 numerical digits
+          </small>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button 
+      mat-raised-button color="primary"
+        class=" form-row justify-content-center"
+        type="submit"
+        [disabled]="!getPatientForm.valid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<div *ngIf="patientExist">
+ <span> {{patient.patientId}}</span>
+</div>

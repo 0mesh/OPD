@@ -1,0 +1,81 @@
+<div class="heading">
+<h2 >Details</h2>
+</div>
+<div class="position">
+  <table class="table">
+    <thead class="header">
+      <tr>
+        <th scope="col">Patient Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Gender</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Address</th>
+        <th scope="col">SSN</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <tr>
+        <td>{{ patient.patientId }}</td>
+        <td>{{ patient.firstName }} {{ patient.lastName }}</td>
+        <td>{{ patient.email }}</td>
+        <td>{{ patient.phoneNumber }}</td>
+        <td>{{ patient.gender }}</td>
+        <td>{{ patient.dateOfBirth | date: "dd/MM/yyyy" }}</td>
+        <td>
+          {{ patient.address }},{{ patient.city }},<br />{{ patient.state }}
+        </td>
+        <td>{{ patient.ssn }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="button">
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="['/patients/update/', patient.patientId]"
+  >
+    Update
+  </button>
+</div>
+<br />
+<br />
+<hr style="border-top: 1px solid white" />
+<div class="heading">
+<h2 class="heading">Medical History</h2>
+</div>
+<div class="position">
+  <table class="table">
+    <thead class="header">
+      <tr>
+        <th scope="col">Updated on</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Blood Pressure</th>
+        <th scope="col">Pulse Rate</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <tr *ngFor="let entry of historyList">
+        <td>{{ entry.historyUpdatedOn | date: "dd/MM/yyyy" }}</td>
+        <td>{{ entry.height }}</td>
+        <td>{{ entry.weight }}</td>
+        <td>{{ entry.systolic }} - {{ entry.diastolic }}</td>
+        <td>{{ entry.pulseRate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="button">
+<button
+  style="width: 30px; height: 30px"
+  [routerLink]="['/patients/history/', patient.patientId]"
+  mat-mini-fab
+  color="accent"
+  aria-label="MedicalHistory"
+>
+  <mat-icon style="font-size: 15px">local_hospital</mat-icon>
+</button>
+</div>

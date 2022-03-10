@@ -1,0 +1,12 @@
+.home {
+  height: 90%;
+  background-color: rgb(48, 48, 48);
+  position: relative;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 200px;
+}

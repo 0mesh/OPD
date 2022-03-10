@@ -1,0 +1,329 @@
+29.01.2021 11:05:00,596 INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+29.01.2021 11:05:01,401 INFO  Version:45 - HHH000412: Hibernate Core {5.2.9.Final}
+29.01.2021 11:05:01,404 INFO  Environment:213 - HHH000206: hibernate.properties not found
+29.01.2021 11:05:01,440 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+29.01.2021 11:05:02,381 WARN  StandardDialectResolver:173 - HHH000385: Unknown Microsoft SQL Server major version [14] using [class org.hibernate.dialect.SQLServer2012Dialect] dialect
+29.01.2021 11:05:02,391 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+29.01.2021 11:05:04,430 INFO  ContextLoader:307 - Root WebApplicationContext initialized in 3820 ms
+29.01.2021 11:05:04,436 INFO  DispatcherServlet:525 - Initializing Servlet 'mvc'
+29.01.2021 11:05:04,445 INFO  DispatcherServlet:547 - Completed initialization in 8 ms
+29.01.2021 11:11:31,361 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+29.01.2021 11:11:31,751 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 11:16:45,676 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:21:22,958 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:21:25,082 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:21:29,186 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:21:35,445 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:13,984 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:22,953 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:28,038 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:33,877 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:38,289 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:41,788 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:42,896 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:45,557 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:49,523 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:22:55,192 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:23:29,098 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:23:31,772 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:23:37,112 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:23:54,613 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:23:58,233 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:00,742 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:03,721 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:05,684 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:08,982 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:18,551 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:33,237 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:24:36,777 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:25:08,328 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:25:19,599 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:00,240 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:10,058 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:14,863 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:18,251 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:20,416 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:22,412 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:26,018 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:30,473 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:31,739 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:35,782 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:38,088 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:53,800 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:27:57,009 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:28:11,398 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:28:13,964 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:28:15,659 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:28:21,281 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:28:23,397 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:29:02,119 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:29:05,326 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:30:44,357 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:30:47,393 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:30:51,864 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:30:55,977 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:30:58,650 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:30:59,772 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:13,706 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:14,995 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:18,221 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:22,808 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:27,518 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:28,994 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:30,687 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:33,050 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:36,862 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:41,617 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:57,721 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:31:59,235 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:32:01,819 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:32:03,396 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:32:05,301 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:32:08,748 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:32:23,114 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:33:58,003 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:00,478 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:02,452 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:07,495 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:09,327 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:10,627 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:13,074 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:14,210 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:16,222 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:34:17,603 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:35:20,946 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:35:27,133 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:36:30,745 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:36:32,814 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:36:43,378 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:36:54,776 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:40:34,041 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:52:06,836 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 11:52:07,850 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:30:45,038 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:31:15,511 INFO  PatientMedicalHistoryDAOImpl:41 - Added to PatientMedicalHistory table with id 9
+29.01.2021 12:31:15,514 INFO  PatientMedicalHistoryController:63 - Patient Medical History Saved for patient   - P000003
+29.01.2021 12:31:17,244 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:31:31,747 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:31:31,808 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:31:31,809 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 4 number of records
+29.01.2021 12:31:31,810 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:31:52,354 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:31:58,439 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:31:58,440 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 4 number of records
+29.01.2021 12:31:58,440 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:31:58,443 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:32:01,016 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:41:39,372 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:42:29,220 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:42:47,485 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:42:47,485 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 4 number of records
+29.01.2021 12:42:47,485 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:42:47,486 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:42:59,591 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:43:01,271 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:43:05,751 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:43:20,126 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000008
+29.01.2021 12:43:20,126 INFO  PatientController:125 - successfully accessed record of patient with id P000008
+29.01.2021 12:43:20,126 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 0 number of records
+29.01.2021 12:43:20,128 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000008
+29.01.2021 12:43:24,615 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:45:08,087 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:45:12,626 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:45:16,820 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:45:18,214 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:45:18,214 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:45:18,214 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 4 number of records
+29.01.2021 12:45:18,215 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:45:52,540 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:45:52,541 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 4 number of records
+29.01.2021 12:45:52,542 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:45:52,542 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:45:56,018 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:45:56,019 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 4 number of records
+29.01.2021 12:45:56,019 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:45:56,020 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:46:22,869 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:47:17,043 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:48:27,671 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:49:03,718 INFO  PatientMedicalHistoryDAOImpl:41 - Added to PatientMedicalHistory table with id 10
+29.01.2021 12:49:04,237 INFO  PatientMedicalHistoryController:63 - Patient Medical History Saved for patient   - P000003
+29.01.2021 12:49:06,139 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:49:11,303 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:49:12,318 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 12:49:12,319 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 12:49:12,319 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 12:49:12,319 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 12:49:28,481 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:49:47,155 INFO  PatientController:200 - Patient  deleted with Id P000014
+29.01.2021 12:50:12,590 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:51:29,955 INFO  AppointmentDAOImpl:43 - Appointment Booked for Patient Id  
+29.01.2021 12:51:33,832 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:51:45,437 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:51:52,684 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:52:11,196 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:52:38,663 INFO  AppointmentDAOImpl:43 - Appointment Booked for Patient Id  
+29.01.2021 12:52:39,900 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:53:04,875 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:53:31,976 INFO  AppointmentDAOImpl:43 - Appointment Booked for Patient Id  
+29.01.2021 12:53:33,420 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:54:31,192 INFO  AppointmentDAOImpl:74 - The appointment A00000020 was deleted succefully
+29.01.2021 12:54:53,938 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:57:32,643 INFO  PatientController:147 - Patient Created with ID  - P000017
+29.01.2021 12:57:32,643 INFO  PatientController:150 - successfully added patient  to database records
+29.01.2021 12:57:36,563 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:57:42,026 INFO  PatientController:125 - successfully accessed record of patient with id P000017
+29.01.2021 12:57:42,027 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000017
+29.01.2021 12:57:42,027 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 0 number of records
+29.01.2021 12:57:42,028 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000017
+29.01.2021 12:57:43,801 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:57:44,934 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:58:11,854 INFO  PatientController:125 - successfully accessed record of patient with id P000006
+29.01.2021 12:58:39,039 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:58:41,895 INFO  PatientController:125 - successfully accessed record of patient with id P000006
+29.01.2021 12:58:41,912 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000006
+29.01.2021 12:58:41,912 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 0 number of records
+29.01.2021 12:58:41,913 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000006
+29.01.2021 12:58:51,042 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:58:52,216 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:58:54,930 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:58:56,376 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000007
+29.01.2021 12:58:56,377 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 0 number of records
+29.01.2021 12:58:56,377 INFO  PatientController:125 - successfully accessed record of patient with id P000007
+29.01.2021 12:58:56,378 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000007
+29.01.2021 12:59:00,660 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 12:59:01,704 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 12:59:08,279 INFO  PatientController:125 - successfully accessed record of patient with id P000007
+29.01.2021 13:02:14,991 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 13:02:19,110 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 13:02:22,201 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 13:02:52,495 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 13:03:02,210 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:03:07,936 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:03:09,537 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 13:03:09,537 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 13:03:09,538 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:03:09,538 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 13:03:10,848 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:03:12,014 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:03:43,866 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:25:55,054 INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+29.01.2021 13:25:55,839 INFO  Version:45 - HHH000412: Hibernate Core {5.2.9.Final}
+29.01.2021 13:25:55,842 INFO  Environment:213 - HHH000206: hibernate.properties not found
+29.01.2021 13:25:55,884 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+29.01.2021 13:25:57,137 WARN  StandardDialectResolver:173 - HHH000385: Unknown Microsoft SQL Server major version [14] using [class org.hibernate.dialect.SQLServer2012Dialect] dialect
+29.01.2021 13:25:57,146 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+29.01.2021 13:25:58,490 INFO  ContextLoader:307 - Root WebApplicationContext initialized in 3434 ms
+29.01.2021 13:25:58,497 INFO  DispatcherServlet:525 - Initializing Servlet 'mvc'
+29.01.2021 13:25:58,510 INFO  DispatcherServlet:547 - Completed initialization in 12 ms
+29.01.2021 13:34:49,368 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+29.01.2021 13:34:49,566 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:37:00,571 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:42:36,320 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:44:14,709 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:49:32,181 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:49:34,434 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:49:35,349 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 13:49:35,349 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 13:49:35,351 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 13:49:35,365 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:49:45,181 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 13:49:45,181 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:49:45,181 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 13:49:45,183 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 13:49:47,296 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 13:49:47,297 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 13:49:47,298 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:49:47,299 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 13:49:53,560 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:49:53,560 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 13:49:53,560 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 13:49:53,562 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 13:49:58,673 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 13:49:58,674 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 13:49:58,674 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 13:49:58,675 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 13:49:59,840 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 13:50:08,434 INFO  PatientMedicalHistoryDAOImpl:41 - Added to PatientMedicalHistory table with id 11
+29.01.2021 13:50:08,446 INFO  PatientMedicalHistoryController:63 - Patient Medical History Saved for patient   - P000005
+29.01.2021 13:50:09,858 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000005
+29.01.2021 13:50:09,858 INFO  PatientController:125 - successfully accessed record of patient with id P000005
+29.01.2021 13:50:09,859 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 1 number of records
+29.01.2021 13:50:09,860 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000005
+29.01.2021 13:53:38,047 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 14:39:14,072 INFO  ContextLoader:271 - Root WebApplicationContext: initialization started
+29.01.2021 14:39:15,304 INFO  Version:45 - HHH000412: Hibernate Core {5.2.9.Final}
+29.01.2021 14:39:15,307 INFO  Environment:213 - HHH000206: hibernate.properties not found
+29.01.2021 14:39:15,372 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+29.01.2021 14:39:17,863 WARN  StandardDialectResolver:173 - HHH000385: Unknown Microsoft SQL Server major version [14] using [class org.hibernate.dialect.SQLServer2012Dialect] dialect
+29.01.2021 14:39:17,874 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+29.01.2021 14:39:21,583 INFO  ContextLoader:307 - Root WebApplicationContext initialized in 7480 ms
+29.01.2021 14:39:21,591 INFO  DispatcherServlet:525 - Initializing Servlet 'mvc'
+29.01.2021 14:39:21,606 INFO  DispatcherServlet:547 - Completed initialization in 14 ms
+29.01.2021 14:40:23,815 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+29.01.2021 14:40:24,157 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 14:43:51,108 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 14:43:55,593 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 14:59:52,901 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:01:26,881 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:01:50,076 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 15:01:50,130 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 15:01:50,131 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 5 number of records
+29.01.2021 15:01:50,133 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 15:02:07,641 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:02:42,672 INFO  PatientMedicalHistoryDAOImpl:41 - Added to PatientMedicalHistory table with id 12
+29.01.2021 15:02:42,706 INFO  PatientMedicalHistoryController:63 - Patient Medical History Saved for patient   - P000003
+29.01.2021 15:02:46,532 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 15:02:46,532 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 15:02:46,532 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 6 number of records
+29.01.2021 15:02:46,534 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 15:02:56,510 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:02:59,690 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 15:04:59,989 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:07:15,192 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000011
+29.01.2021 15:07:15,192 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 0 number of records
+29.01.2021 15:07:15,193 INFO  PatientController:125 - successfully accessed record of patient with id P000011
+29.01.2021 15:07:15,193 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000011
+29.01.2021 15:07:22,122 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:07:43,068 INFO  PatientController:200 - Patient  deleted with Id P000013
+29.01.2021 15:10:20,824 INFO  PatientController:147 - Patient Created with ID  - P000018
+29.01.2021 15:10:20,825 INFO  PatientController:150 - successfully added patient  to database records
+29.01.2021 15:10:27,114 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:11:47,503 INFO  AppointmentDAOImpl:43 - Appointment Booked for Patient Id  
+29.01.2021 15:11:58,179 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:12:18,919 INFO  PatientController:125 - successfully accessed record of patient with id P000009
+29.01.2021 15:15:04,654 INFO  AppointmentDAOImpl:98 - Updated appointment A00000022
+29.01.2021 15:15:08,292 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:15:17,065 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:15:19,139 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:15:37,803 INFO  AppointmentDAOImpl:74 - The appointment A00000022 was deleted succefully
+29.01.2021 15:18:25,474 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:18:46,377 INFO  AppointmentDAOImpl:43 - Appointment Booked for Patient Id  
+29.01.2021 15:18:50,215 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:19:15,489 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:20:09,278 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:33:12,638 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:33:13,902 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 15:33:13,905 INFO  PatientMedicalHistoryDAOImpl:29 - Accessed Patient Medical history of patient id: P000003
+29.01.2021 15:33:13,905 INFO  PatientMedicalHistoryDAOImpl:30 - Retrieved 6 number of records
+29.01.2021 15:33:13,906 INFO  PatientMedicalHistoryController:48 - successfully accessed all medical history records of patient P000003
+29.01.2021 15:50:02,468 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:50:07,979 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:50:17,909 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:50:29,854 INFO  AppointmentDAOImpl:57 - Accessed All Appointments
+29.01.2021 15:58:14,187 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:58:17,673 INFO  PatientController:125 - successfully accessed record of patient with id P000005
+29.01.2021 15:58:21,413 INFO  PatientController:125 - successfully accessed record of patient with id P000006
+29.01.2021 15:58:37,092 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:58:41,491 INFO  PatientController:125 - successfully accessed record of patient with id P000003
+29.01.2021 15:58:44,235 INFO  PatientController:125 - successfully accessed record of patient with id P000004
+29.01.2021 15:58:51,732 INFO  PatientController:125 - successfully accessed record of patient with id P000006
+29.01.2021 15:58:59,398 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:59:03,446 INFO  PatientController:125 - successfully accessed record of patient with id P000005
+29.01.2021 15:59:20,946 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 15:59:31,021 INFO  PatientController:125 - successfully accessed record of patient with id P000005
+29.01.2021 15:59:41,460 INFO  PatientController:125 - successfully accessed record of patient with id P000006
+29.01.2021 15:59:56,471 INFO  PatientController:111 - successfully accessed all records
+29.01.2021 16:02:48,806 INFO  PatientController:125 - successfully accessed record of patient with id P000006
+29.01.2021 16:02:58,015 INFO  PatientController:125 - successfully accessed record of patient with id P000007
+29.01.2021 16:03:12,599 INFO  PatientController:111 - successfully accessed all records
